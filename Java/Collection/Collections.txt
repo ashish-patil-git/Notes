@@ -1,0 +1,66 @@
+
+
+Java Collections
+https://www.javatpoint.com/collections-in-java
+Collection Interview Question
+https://www.netjstech.com/2015/11/java-collections-interview-questions.html
+
+
+ArrayList
+https://www.javatpoint.com/java-arraylist
+https://www.netjstech.com/2015/08/how-arraylist-works-internally-in-java.html
+https://docs.oracle.com/javase/8/docs/api/index.html?java/util/Arrays.html
+
+
+ListIterator
+https://www.netjstech.com/2015/08/list-iterator-in-java.html
+
+
+Queue (insights on method differences)
+https://docs.oracle.com/javase/8/docs/api/java/util/Queue.html
+
+
+PriorityQueue
+https://docs.oracle.com/javase/7/docs/api/java/util/PriorityQueue.html
+https://www.journaldev.com/1642/java-priority-queue-priorityqueue-example
+https://www.geeksforgeeks.org/priority-queue-class-in-java-2/
+https://stackoverflow.com/questions/8832571/internal-sorting-of-priorityqueue
+
+
+Dequeue (insights on method differences)
+https://docs.oracle.com/javase/8/docs/api/java/util/Deque.html
+
+
+LinkedList
+https://docs.oracle.com/javase/8/docs/api/java/util/LinkedList.html
+
+
+ArrayList Vs LinkedList
+https://www.netjstech.com/2015/08/difference-between-arraylist-and-linkedlist-in-java.html
+
+
+HashSet
+https://www.netjstech.com/2018/07/hashset-in-java.html
+https://www.netjstech.com/2015/09/how-hashset-works-internally-in-java.html
+
+
+HashMap
+https://www.netjstech.com/2018/09/hashmap-in-java.html
+https://www.netjstech.com/2015/05/how-hashmap-internally-works-in-java.html
+https://www.netjstech.com/2015/05/how-to-loop-iterate-hash-map-in-java.html
+https://www.netjstech.com/2018/07/how-to-sort-hashmap-in-java.html
+https://www.baeldung.com/java-hashmap
+https://dzone.com/articles/hashmap-performance
+
+
+LinkedHashMap
+https://www.netjstech.com/2015/11/linkedhashmap-in-java.html
+https://docs.oracle.com/en/java/javase/12/docs/api/java.base/java/util/LinkedHashMap.html#removeEldestEntry(java.util.Map.Entry)
+https://stackoverflow.com/questions/20772869/what-is-the-use-of-linkedhashmap-removeeldestentry/20773619
+https://www.baeldung.com/java-linked-hashmap
+
+
+TreeMap
+https://docs.oracle.com/javase/8/docs/api/java/util/TreeMap.html
+https://www.programiz.com/java-programming/treemap
+https://www.baeldung.com/java-treemap

@@ -1,0 +1,27 @@
+Map.Entry Interface
+https://docs.oracle.com/javase/8/docs/api/java/util/Map.Entry.html
+
+
+Default
+static <K extends Comparable<? super K>,V>
+Comparator<Map.Entry<K,V>>	comparingByKey()
+						Returns a comparator that compares Map.Entry in natural order on key.
+static <K,V> Comparator<Map.Entry<K,V>>	comparingByKey(Comparator<? super K> cmp)
+						Returns a comparator that compares Map.Entry by key using the given Comparator.
+static <K,V extends Comparable<? super V>>
+Comparator<Map.Entry<K,V>>	comparingByValue()
+						Returns a comparator that compares Map.Entry in natural order on value.
+static <K,V> Comparator<Map.Entry<K,V>>	comparingByValue(Comparator<? super V> cmp)
+						Returns a comparator that compares Map.Entry by value using the given Comparator.
+
+Abstract
+boolean	equals(Object o)
+						Compares the specified object with this entry for equality.
+K	getKey()
+						Returns the key corresponding to this entry.
+V	getValue()
+						Returns the value corresponding to this entry.
+int	hashCode()
+						Returns the hash code value for this map entry.
+V	setValue(V value)
+						Replaces the value corresponding to this entry with the specified value (optional operation).

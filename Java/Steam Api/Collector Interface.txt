@@ -1,0 +1,24 @@
+Most of the Notes Based on Book Java 8 in action and other links explored.
+
+
+Collector Interface
+
+Refer Spring Action book for more details
+public interface Collector<T, A, R> { 
+	Supplier<A> supplier();
+	BiConsumer<A, T> accumulator();
+	Function<A, R> finisher(); - final result of collector
+	BinaryOperator<A> combiner(); - used for parallel execution to combine results
+	Set<Characteristics> characteristics(); 
+} 
+In this listing, the following definitions apply:
+	- T is the generic type of the items in the stream to be collected. 
+	- A is the type of the accumulator, the object on which the partial result will be accumulated during the collection process.
+	- R is the type of the object (typically, but not always, the collection) resulting from the collect operation.
+
+Characteristics method The last method, characteristics, returns an immutable set of Characteristics, defining the behavior of the collector—in particular providing hints about whether the stream can be reduced in parallel and which optimizations are valid when doing so. Characteristics is an enumeration containing three items:
+
+	- UNORDERED—The result of the reduction isn’t affected by the order in which the items in the stream are traversed and accumulated.
+	- CONCURRENT—The accumulator function can be called concurrently from multiple threads, and then this collector can perform a parallel reduction of the stream. If the collector isn’t also flagged as UNORDERED, it can perform a parallel reduction only when it’s applied to an unordered data source.
+	- IDENTITY_FINISH—This indicates the function returned by the finisher method is the identity one, and its application can be omitted. In this case, the accumulator object is directly used as the final result of the reduction process. This also implies that it’s safe to do an unchecked cast from the
+accumulator A to the result R.

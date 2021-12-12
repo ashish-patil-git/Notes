@@ -1,0 +1,62 @@
+https://www.java67.com/2018/01/10-important-points-about-string-in-java.html
+https://www.javastring.net/
+
+When to use intern() method of String in Java? - https://javarevisited.blogspot.com/2015/12/when-to-use-intern-method-of-string-in-java.html#axzz54SKnzBHU
+
+String Deduplication of G1 Garbage collector to Save Memory from Duplicate String in Java 8 -
+https://javarevisited.blogspot.com/2017/02/use-string-deduplication-to-save-memory-from-duplicates-in-java8.html
+
+String Methods - https://docs.oracle.com/javase/8/docs/api/java/lang/String.html
+
+indexOf
+lastIndexOf
+trim
+toString
+toUpperCase
+toLowerCase
+endsWith
+startsWith
+substring
+contains
+charAt
+toCharArray
+replace - char, char
+replace - Charsequence, Charsequence
+replaceAll - regex, replacement
+replaceFirst - regex, replacement
+split
+join - static
+intern
+empty
+getBytes
+concat
+equals
+equalsIgnoreCase
+compareTo
+compareToIgnore
+matches
+
+
+
+substring - https://www.java67.com/2016/01/5-examples-of-substring-in-java.html
+matches - https://www.java67.com/2012/09/java-string-matches-example-regular-expression.html
+
+
+
+remaining
+
+https://www.journaldev.com/538/string-vs-stringbuffer-vs-stringbuilder
+http://javarevisited.blogspot.com/2012/03/why-character-array-is-better-than.html
+https://www.java67.com/2013/03/how-to-split-string-in-java-regular-expression.html
+https://javarevisited.blogspot.com/2012/08/how-to-format-string-in-java-printf.html#axzz54SKnzBHU
+https://javarevisited.blogspot.com/2015/02/difference-between-utf-8-utf-16-and-utf.html
+https://javarevisited.blogspot.com/2012/02/how-to-convert-char-to-string-in-java.html
+
+
+
+
+String Problems
+
+https://javarevisited.blogspot.com/2015/01/top-20-string-coding-interview-question-programming-interview.html
+
+https://www.java67.com/2018/04/21-string-programming-and-coding-interview-questions-answers.html

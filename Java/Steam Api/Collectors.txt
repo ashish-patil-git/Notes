@@ -1,0 +1,94 @@
+Most of the Notes Based on Book Java 8 in action and other links explored.
+
+Collectors
+
+Collector Interface and Collect Method
+	- collect is a reduction operation, just like reduce, that takes as argument various recipes for accumulating the elements of a stream into a summary result. These recipes are defined by a new Collector interface,
+
+Predefined Collectors offers three main functionalities: 
+	- Reducing and summarizing stream elements to a single value 
+	- Grouping elements
+	- Partitioning elements
+
+
+Counting Collector
+
+		long howManyDishes = menu.stream().collect(Collectors.counting()); 
+	- You can write this far more directly as 
+		long howManyDishes = menu.stream().count();
+
+	- but the counting collector can be especially useful when used in combination with other collectors
+
+
+
+Collectors.maxBy and Collectors.minBy,
+
+	Comparator<Dish> dishCaloriesComparator = Comparator.comparingInt(Dish::getCalories);
+
+	Optional<Dish> mostCalorieDish = menu.stream()
+		.collect(Collectors.maxBy(dishCaloriesComparator));
+
+
+
+Collectors.summingInt (same counter part for Long and Double)
+
+	- int totalCalories = menu.stream().collect(summingInt(Dish::getCalories));
+
+
+
+
+Collectors.averagingInt (same counter part for Long and Double)
+
+	- double avgCalories = menu.stream().collect(averagingInt(Dish::getCalories));
+
+
+
+Collectors.summarizingInt and IntSummaryStatistics  (same counter part for Long and Double)
+	- obtain the sum, average, maximum, and minimum of the element contained in each dish with a single summarizing operation:
+
+	- IntSummaryStatistics menuStatistics = menu.stream().collect(summarizingInt(Dish::getCalories));
+
+	- This collector gathers all that information in a class called IntSummaryStatistics that provides convenient getter methods to access the results. 
+	- Printing the menu-Statistic object produces the following output:
+			IntSummaryStatistics{count=9, sum=4300, min=120, average=477.777778, max=800}
+
+
+Collectors.joining
+	- String shortMenu = menu.stream().collect(joining());
+	- String shortMenu = menu.stream().map(Dish::getName).collect(joining(", "));
+	- internally uses StringBuilder and calls toString on each element
+
+
+More Generalized form of collector (all above are special form of below collector)
+
+	int totalCalories = menu.stream().collect(reducing( 0, Dish::getCalories, (i, j) -> i + j));
+
+	It takes three arguments: 
+		- The first argument is the starting value of the reduction operation and will also be the value returned in the case of a stream with no elements, so clearly 0 is the appropriate value in the case of a numeric sum.
+		- The second argument is the same function you used in section 6.2.2 to transform a dish into an int representing its calorie content.
+		- The third argument is a BinaryOperator that aggregates two items into a single value of the same type. Here, it just sums two ints.
+
+
+	This one takes one argument BinaryOperator
+		- first by default argument is first item of the stream,
+		- Funcntion.identity is the second by default argument
+	Optional<Dish> mostCalorieDish = menu.stream().collect(reducing(
+	(d1, d2) -> d1.getCalories() > d2.getCalories() ? d1 : d2));
+
+
+toList
+
+toSet
+
+toCollection
+
+groupingBy(Classification Function, Collector (by default to list))
+	- can achieve multilevel mapping using nested groupingBy or paritioningBy
+
+paritioningBy(predicate, Collector (by default to list))
+	- always returns Map with Boolean Key
+	- can achieve multilevel mapping using nested groupingBy or paritioningBy
+
+collectingAndThen(Collector, transformation function to be applied on collector's result)
+
+mappingBy(transformation function to be applied on stream, Collector)

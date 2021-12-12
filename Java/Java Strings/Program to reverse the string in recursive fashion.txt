@@ -1,0 +1,39 @@
+/******************************************************************************
+
+
+                    To reverse the string without using string buffer
+
+*******************************************************************************/
+import java.util.Map;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Program to check first unique character in String");
+		String inputString = args[0].toLowerCase();
+		
+		if (!isValid(inputString)) {
+		    System.out.println("Input String is not valid");
+		} else {
+            System.out.println("Reverse String : " + reverseString(inputString));
+		}
+	}
+	
+	private static boolean isValid(String inputString) {
+	    return !(inputString == null || inputString.isEmpty());
+	}
+	
+	private static String reverseString(String inputString) {
+	    return reverse(0, inputString.toCharArray());
+	}
+	
+	private static String reverse(int index, char[] characterArray) {
+	    if (index == characterArray.length) {
+	        return "";
+	    } else {
+	        int nextIndex = index + 1;
+	        return reverse(nextIndex, characterArray).concat(String.valueOf(characterArray[index]));
+	    }
+	}
+
+}

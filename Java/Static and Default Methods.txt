@@ -1,0 +1,5 @@
+Default Methods
+https://www.netjstech.com/2015/05/interface-default-methods-in-java-8.html
+
+Static Methods
+https://www.netjstech.com/2015/05/interface-static-method-in-java-8.html

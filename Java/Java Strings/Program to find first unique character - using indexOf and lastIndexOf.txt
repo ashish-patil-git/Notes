@@ -1,0 +1,35 @@
+/******************************************************************************
+
+
+                    Using indexOf and lastIndexOf
+
+*******************************************************************************/
+import java.util.Scanner;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Program to check first unique character in String");
+		String inputString = args[0].toLowerCase();
+		
+		if (!isValid(inputString)) {
+		    System.out.println("Input String is not valid");
+		} else {
+		    char[] characterArray = inputString.toCharArray();
+		    // morningmorng
+            for (char character : characterArray) {
+                if (inputString.indexOf(character) == inputString.lastIndexOf(character)) {
+                    System.out.println("This is the first unique character: " + character);
+                    break;
+                }
+            }
+		}
+	}
+	
+	private static boolean isValid(String inputString) {
+	    return !(inputString == null || inputString.isEmpty());
+	}
+
+}

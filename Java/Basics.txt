@@ -1,0 +1,59 @@
+Java technology is both a programming language and a platform.
+
+
+	1. The Java programming language is a high-level object-oriented language that has a particular syntax and style.
+
+	2. A Java platform is a particular environment in which Java programming language applications run.
+
+
+Java Programming Language Platforms
+
+There are four platforms of the Java programming language:
+	• Java Platform, Standard Edition (Java SE)
+	• Java Platform, Enterprise Edition (Java EE)
+	• Java Platform, Micro Edition (Java ME)
+	• JavaFX
+
+
+All Java platforms consist of a Java Virtual Machine (VM) and an application programming interface (API). 
+
+	1. The Java Virtual Machine is a program, for a particular hardware and software platform, that runs Java technology applications. 
+
+	2. An API is a collection of software components that you can use to create other software components or applications.
+
+Each Java platform provides a virtual machine and an API, and this allows applications written for that platform to run on any compatible system with all the advantages of the Java programming language: platform-independence, power, stability, ease-of-development, and security.
+
+
+
+
+Java 8 docs tutorial
+https://docs.oracle.com/javase/tutorial/java/index.html
+https://docs.oracle.com/javase/tutorial/index.html
+
+Exception Handling
+https://docs.oracle.com/javase/tutorial/essential/exceptions/index.html
+
+Nested Classes
+https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+
+String
+https://www.baeldung.com/java-string-pool
+https://www.journaldev.com/797/what-is-java-string-pool
+
+Wrapper Classes
+https://codepumpkin.com/interview-questions-wrapper-classes/
+https://howtodoinjava.com/java-examples/internal-cache-wrapper-classes/
+https://www.javatpoint.com/wrapper-class-in-java
+https://www.baeldung.com/java-wrapper-classes
+
+
+Varargs (Variable Length Arguments)
+https://www.geeksforgeeks.org/variable-arguments-varargs-in-java/
+
+Generics
+https://www.geeksforgeeks.org/generics-in-java/
+https://www.baeldung.com/java-generics#wildcards
+https://www.javatpoint.com/generics-in-java
+
+Covariant
+https://www.netjstech.com/2015/05/covariant-return-type-in-java.html

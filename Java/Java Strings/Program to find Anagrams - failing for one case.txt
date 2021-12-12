@@ -1,0 +1,54 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Program to print whether strings are Anagrams");
+		String inputString1 = args[0];
+		String inputString2 = args[1];
+		
+		if (!isValid(inputString1) || !isValid(inputString2)) {
+		    System.out.println("Input String is not valid");
+		} else if (isAnagram(inputString1, inputString2)) {
+		    printIsAnagram();
+		} else {
+		    printIsNotAnagram();
+		}
+	}
+	
+	private static boolean isValid(String inputString) {
+	    return !(inputString == null || inputString.isEmpty());
+	}
+	
+	private static boolean isAnagram(String inputString1, String inputString2) {
+	    
+	    if (inputString1.length() != inputString2.length()) {
+		    return false;
+		}
+		
+		for(char character : inputString1.toCharArray()) {
+		    if (inputString2.indexOf(character) == -1) {
+		        return false;
+		    }
+		}
+
+		return true;
+	}
+	
+	private static void printIsAnagram() {
+	    System.out.println("Anagrams!");
+	}
+	
+	private static void printIsNotAnagram() {
+	    System.out.println("Not Anagrams!");
+	}
+}

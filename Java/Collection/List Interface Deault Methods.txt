@@ -1,0 +1,44 @@
+List Interface Deault Methods
+
+
+default void	replaceAll(UnaryOperator<E> operator)
+						Replaces each element of this list with the result of applying the operator to that element.
+
+						Uses internally List Iterator
+							final ListIterator<E> li = list.listIterator();
+     						while (li.hasNext()) {
+         						li.set(operator.apply(li.next()));
+     						}
+
+default void	sort(Comparator<? super E> c)
+						Sorts this list according to the order induced by the specified Comparator.
+default Spliterator<E>	spliterator()
+						Creates a Spliterator over the elements in this list.
+
+
+
+List Interface Methods apart from Collection Method
+
+void	add(int index, E element)
+						Inserts the specified element at the specified position in this list (optional operation).
+E	set(int index, E element)
+						Replaces the element at the specified position in this list with the specified element (optional operation).
+E	remove(int index)
+						Removes the element at the specified position in this list (optional operation).
+E	get(int index)
+						Returns the element at the specified position in this list.
+
+
+int	indexOf(Object o)
+						Returns the index of the first occurrence of the specified element in this list, or -1 if this list does not contain the element.
+int	lastIndexOf(Object o)
+						Returns the index of the last occurrence of the specified element in this list, or -1 if this list does not contain the element.
+
+ListIterator<E>	listIterator()
+						Returns a list iterator over the elements in this list (in proper sequence).
+ListIterator<E>	listIterator(int index)
+						Returns a list iterator over the elements in this list (in proper sequence), starting at the specified position in the list.
+
+
+List<E>	subList(int fromIndex, int toIndex)
+						Returns a view of the portion of this list between the specified fromIndex, inclusive, and toIndex, exclusive.

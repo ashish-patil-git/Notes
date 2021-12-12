@@ -1,0 +1,42 @@
+Most of the Notes Based on Book Java 8 in action and other links explored.
+
+Stream Methods
+https://docs.oracle.com/javase/8/docs/api/java/util/stream/Stream.html
+
+Intermediate Operations
+filter
+map
+flatMap
+mapToObj
+peek
+limit - stateful bounded
+skip - stateful bounded
+distinct - stateful unbounded
+sorted - stateful unbounded
+
+Terminal Operations
+anyMatch
+noneMatch
+allMatch
+findFirst
+findAny
+count
+forEach
+collect
+reduce - stateful bounded
+
+Arrays.stream(int array) int stream
+Arrays.stream(long array) long stream
+Arrays.stream(double array) double stream
+Arrays.stream(reference array) reference stream
+
+returns Stream<T> - Stream.of(T ...values)
+returns Stream<T> - Stream.of(T value)
+returns T - Stream.empty()
+
+
+
+
+Streams
+https://theboreddev.com/understanding-java-streams/
+https://stackify.com/streams-guide-java-8/

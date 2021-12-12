@@ -1,0 +1,43 @@
+/******************************************************************************
+
+
+                    Using LinkedHashMap
+
+*******************************************************************************/
+import java.util.LinkedHashMap;
+import java.util.Map;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Program to check first unique character in String");
+		String inputString = args[0].toLowerCase();
+		
+		if (!isValid(inputString)) {
+		    System.out.println("Input String is not valid");
+		} else {
+		    Map<Character, Integer> characterCount = new LinkedHashMap<>();
+		    char[] characterArray = inputString.toCharArray();
+		    // morningmorng
+            for (char character : characterArray) {
+                if (characterCount.containsKey(character)) {
+                    characterCount.put(character, characterCount.get(character) + 1);
+                } else {
+                    characterCount.put(character, 1);
+                }
+            }
+            
+            for (Map.Entry<Character, Integer> entry : characterCount.entrySet()) {
+                if (entry.getValue() == 1) {
+                    System.out.println("The first unique character is: " + entry.getKey());
+                    break;
+                }
+            }
+		}
+	}
+	
+	private static boolean isValid(String inputString) {
+	    return !(inputString == null || inputString.isEmpty());
+	}
+
+}

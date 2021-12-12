@@ -1,0 +1,8 @@
+Serialization
+https://www.netjstech.com/2017/04/serialization-in-java.html
+https://www.baeldung.com/java-serialization
+https://www.netjstech.com/2017/04/transient-in-java.html
+https://snyk.io/blog/serialization-and-deserialization-in-java/
+https://www.netjstech.com/2017/04/externalizable-interface-in-java.html
+https://www.netjstech.com/2017/04/serialversionuid-and-versioning-in-java-serialization.html
+https://www.netjstech.com/2015/05/marker-interface-in-java.html

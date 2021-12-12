@@ -1,0 +1,5 @@
+Functional Interface
+https://www.netjstech.com/2015/06/functional-interfaces-and-lambda-expression-in-java-8.html
+
+@FunctionalInterface Annotation
+https://www.netjstech.com/2015/06/functional-interface-annotation-java-8.html

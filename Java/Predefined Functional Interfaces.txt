@@ -1,0 +1,103 @@
+
+Predefined Function Interface
+https://www.netjstech.com/2020/07/pre-defined-functional-interfaces-java.html
+
+Consumer
+1 abstract method (accept), 1 default method (andThen)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/Consumer.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/BiConsumer.html
+
+Primitive Consumers
+1 abstract method (accept), 1 default method (andThen)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/IntConsumer.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/LongConsumer.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleConsumer.html
+
+1 Object and 1 Primitive Consumer
+1 abstract method (accept)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjIntConsumer.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjLongConsumer.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ObjDoubleConsumer.html
+
+Supplier
+1 abstract method (get)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/Supplier.html
+
+Primitive supplier
+1 abstract method (getAsInt, getAslong, getAsDouble getAsBoolean)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/IntSupplier.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/LongSupplier.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleSupplier.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/BooleanSupplier.html
+
+Function
+1 abstract method (apply), 2 default methods (andThen, compose), 1 static method (identity)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html
+1 abstract method (apply), 1 default methods (andThen)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/BiFunction.html
+
+Function Primitive to Object
+1 abstract method (apply),
+https://docs.oracle.com/javase/8/docs/api/java/util/function/IntFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/LongFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleFunction.html
+
+Function Primitive to Primitive 
+1 abstract method
+https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToIntFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleToLongFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToDoubleFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/IntToLongFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToDoubleFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/LongToIntFunction.html
+
+Function Object to Primitive
+1 abstract method
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ToDoubleBiFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ToIntBiFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongFunction.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/ToLongBiFunction.html
+
+
+Predicate
+1 bastract method (test), 3 default method (and, or, negate), 1 static method (isEqual)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html
+1 bastract method (test), 3 default method (and, or, negate)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/BiPredicate.html
+
+
+Primitive Predicate
+1 bastract method (test), 3 default method (and, or, negate)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/IntPredicate.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/LongPredicate.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/DoublePredicate.html
+
+
+UnaryOperator extends Function with same argument and return type
+1 abstract method (apply), 2 default methods (andThen, compose), 1 static method (identity)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/UnaryOperator.html
+
+Primitive Unary Operator with same primitive argument and return type
+1 abstract method (applyAsInt, Long, Double), 2 default methods (andThen, compose), 1 static method (identity)
+https://docs.oracle.com/javase/8/docs/api/java/util/function/IntUnaryOperator.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/LongUnaryOperator.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleUnaryOperator.html
+
+
+Binary Operator
+1 abstract method (apply), 2 default methods (andThen), 2 static method (maxBy, minBy)
+BinaryOperator extends Bifunction with all same arguments and return type
+
+Primitive Binary operator same primitive argument and return type
+1 bastract method
+https://docs.oracle.com/javase/8/docs/api/java/util/function/IntBinaryOperator.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/LongBinaryOperator.html
+https://docs.oracle.com/javase/8/docs/api/java/util/function/DoubleBinaryOperator.html
+
+Optional
+https://docs.oracle.com/javase/8/docs/api/java/util/Optional.html
+https://docs.oracle.com/javase/8/docs/api/java/util/OptionalInt.html
+https://docs.oracle.com/javase/8/docs/api/java/util/OptionalLong.html
+https://docs.oracle.com/javase/8/docs/api/java/util/OptionalDouble.html

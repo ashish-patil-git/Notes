@@ -1,0 +1,139 @@
+Thread
+https://www.netjstech.com/2019/08/java-multithreading-tutorial.html
+https://www.netjstech.com/2015/06/creating-thread-in-java.html
+https://www.netjstech.com/2015/06/lifecycle-of-thread-thread-states-in-java-multithreading.html
+https://www.netjstech.com/2015/06/thread-priorities-java-multithreading.html
+https://www.netjstech.com/2015/06/difference-between-thread-and-process-java.html
+https://www.netjstech.com/2018/04/main-thread-in-java.html
+https://www.netjstech.com/2015/06/can-we-start-same-thread-twice-in-java.html
+https://www.netjstech.com/2015/06/what-if-run-method-called-directly-instead-of-start-java.html
+https://www.netjstech.com/2015/06/synchronization-in-java-multithreading-synchronizing-thread.html
+https://www.netjstech.com/2018/05/static-synchronization-in-java-multi-threading.html
+https://www.netjstech.com/2015/06/race-condition-in-java-multi-threading.html
+https://www.netjstech.com/2015/07/deadlock-in-java-multi-threading.html
+https://www.netjstech.com/2017/10/thread-starvation-in-java-multi-threading.html
+https://www.netjstech.com/2017/12/livelock-in-java-multi-threading.html
+https://www.netjstech.com/2017/12/livelock-in-java-multi-threading.html
+https://www.netjstech.com/2015/07/inter-thread-communiction-wait-notify-java-multi-thread.html
+https://www.netjstech.com/2015/07/why-wait-notify-and-notifyall-methods-in-object-class-java-multi-threading.html (better answer in notes)
+https://www.netjstech.com/2015/06/isalive-and-join-method-in-java-multi.html
+https://www.netjstech.com/2015/07/difference-between-yield-and-sleep-java-multi-threading.html
+https://www.netjstech.com/2015/07/difference-between-sleep-and-wait-java-threading.html(refer notes as well for wait and notify)
+https://www.netjstech.com/2015/07/when-and-how-to-use-thread-local-class-in-java.html
+https://www.baeldung.com/java-threadlocal
+http://tutorials.jenkov.com/java-concurrency/threadlocal.html
+https://www.netjstech.com/2017/03/volatile-in-java_20.html (better in notes and Jenkov's Tutorial - happens before gaurantee)
+https://www.netjstech.com/2016/08/string-and-thread-safety-in-java.html
+
+
+Jenkov's Thread Tutorial
+Main Links
+http://tutorials.jenkov.com/java-concurrency/index.html
+http://tutorials.jenkov.com/java-util-concurrent/index.html
+
+Internal Links
+http://tutorials.jenkov.com/java-concurrency/benefits.html (did Very High Level Reading)
+http://tutorials.jenkov.com/java-concurrency/costs.html (did Very High Level Reading)
+https://stackoverflow.com/questions/5483047/why-is-creating-a-thread-said-to-be-expensive
+http://tutorials.jenkov.com/java-concurrency/concurrency-models.html(did Very High Level Reading)
+http://tutorials.jenkov.com/java-concurrency/same-threading.html(did Very High Level Reading)
+http://tutorials.jenkov.com/java-concurrency/java-happens-before-guarantee.html
+http://tutorials.jenkov.com/java-concurrency/cache-coherence-in-java-concurrency.html
+http://tutorials.jenkov.com/java-concurrency/false-sharing.html
+http://tutorials.jenkov.com/java-concurrency/locks.html
+http://tutorials.jenkov.com/java-concurrency/semaphores.html
+http://tutorials.jenkov.com/java-concurrency/blocking-queues.html
+http://tutorials.jenkov.com/java-concurrency/producer-consumer.html
+http://tutorials.jenkov.com/java-concurrency/thread-pools.html
+http://tutorials.jenkov.com/java-concurrency/compare-and-swap.html
+http://tutorials.jenkov.com/java-concurrency/non-blocking-algorithms.html
+
+Concurrent HashMap
+https://www.netjstech.com/2016/01/concurrenthashmap-in-java.html
+https://www.netjstech.com/2015/05/fail-fast-vs-fail-safe-iterator-in-java.html
+https://www.netjstech.com/2016/02/difference-between-hashmap-and-concurrenthashmap-java.html
+
+CopyOnWriteArrayList
+https://www.baeldung.com/java-copy-on-write-arraylist
+https://www.netjstech.com/2016/01/copyonwritearraylist-in-java.html
+http://java-latte.blogspot.com/2014/06/How-CopyOnWriteArrayList-works-in-Java-how-it-differ-from-ArrayList.html
+https://www.netjstech.com/2016/03/difference-between-arraylist-and-copyonwritearraylist-java.html
+
+CopyOnWriteArraySet
+https://www.netjstech.com/2016/03/copyonwritearrayset-in-java-concurrency.html
+
+ConcurrentSkipListMap (Thread Safe Tree Map)
+https://www.netjstech.com/2016/03/concurrentskiplistmap-in-java.html
+
+ConcurrentSkipListSet (Thread Safe Tree Set)
+https://www.netjstech.com/2016/03/concurrentskiplistset-in-java.html
+
+
+Blocking Queue
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingQueue.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ArrayBlockingQueue.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingQueue.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/PriorityBlockingQueue.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/DelayQueue.html
+
+
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedTransferQueue.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/SynchronousQueue.html
+
+Blocking Dequeue
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/BlockingDeque.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/LinkedBlockingDeque.html
+
+
+CountDownLatch
+http://tutorials.jenkov.com/java-util-concurrent/countdownlatch.html
+
+CyclicBarrier
+http://tutorials.jenkov.com/java-util-concurrent/cyclicbarrier.html
+
+Exchanger
+http://tutorials.jenkov.com/java-util-concurrent/exchanger.html
+
+Future
+http://tutorials.jenkov.com/java-util-concurrent/java-future.html
+
+Callable
+http://tutorials.jenkov.com/java-util-concurrent/java-callable.html
+
+ThreadFactory
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadFactory.html
+
+Executor
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executor.html
+
+ExecutorService
+http://tutorials.jenkov.com/java-util-concurrent/executorservice.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ExecutorService.html
+
+ScheduledExecutorService
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledExecutorService.html
+
+ThreadPoolExecutor
+http://tutorials.jenkov.com/java-util-concurrent/threadpoolexecutor.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ThreadPoolExecutor.html
+
+ScheduledThreadPoolExecutor
+http://tutorials.jenkov.com/java-util-concurrent/scheduledexecutorservice.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ScheduledThreadPoolExecutor.html
+
+Executors (Utility Service for above specification and implementations)
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/Executors.html
+
+ForkJoinPool
+http://tutorials.jenkov.com/java-util-concurrent/java-fork-and-join-forkjoinpool.html
+https://www.baeldung.com/java-fork-join
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinTask.html
+https://docs.oracle.com/javase/8/docs/api/java/util/concurrent/ForkJoinPool.html
+
+
+
+Daemon Thread
+https://www.baeldung.com/java-daemon-thread
+
+About Threads to Read
+https://docs.oracle.com/javase/tutorial/essential/concurrency/immutable.html

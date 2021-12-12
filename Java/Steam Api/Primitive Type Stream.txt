@@ -1,0 +1,23 @@
+Most of the Notes Based on Book Java 8 in action and other links explored.
+
+IntStream, DoubleStream, LongStream
+Methods to convert reference Stream to primitive streams
+	- mapToInt, mapToDouble, and mapToLong
+Method to convert primitive stream back to Reference Stream
+	- boxed, mapToObj
+Special Methods of primitive streams
+	- sum, max(returns OptionalInt, OptionalDouble, OptionalLong), min(returns OptionalInt, OptionalDouble, OptionalLong)
+
+IntStream, LongStream special static method
+	range(1, 100), rangeClosed(1, 100) to generate range of values, range's method second parameter is exclusive
+
+Infinite Streams - The Streams API provides two static methods to generate a stream from a function: Stream.iterate and Stream.generate.
+
+	- Stream.iterate(0, n -> n + 2).limit(10).forEach(System.out::println);
+		Iterate Takes UnaryOperator<T>
+
+	- Stream.generate(Math::random).limit(5).forEach(System.out::println);
+		generate Takes Supplier<T>
+
+	- Both the static methods are also available in primitive stream classes (IntStream, LongStream, DoubleStream)
+	- Always should be used with limit operation

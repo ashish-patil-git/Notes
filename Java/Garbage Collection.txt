@@ -1,0 +1,5 @@
+Garbage Collection
+https://www.baeldung.com/jvm-garbage-collectors
+
+G1GC 
+https://www.oracle.com/technetwork/tutorials/tutorials-1876574.html#:~:text=The%20Garbage%2DFirst%20(G1),probability%2C%20while%20achieving%20high%20throughput.

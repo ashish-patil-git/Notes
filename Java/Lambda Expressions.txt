@@ -1,0 +1,9 @@
+Lambda Expression
+https://www.netjstech.com/2015/06/lambda-expression-in-java-8-overview.html
+http://what-when-how.com/Tutorial/topic-735pjvhv/Beginning-Java-8-Language-Features-136.html (Why Lamba Expression is a Poly Expression ? and not Standalone Expression)
+https://www.netjstech.com/2015/06/lambda-expression-as-method-parameter-java-8.html
+https://www.netjstech.com/2015/06/lambda-expression-and-variable-scope.html
+https://www.netjstech.com/2015/06/lambda-expression-and-exception-handling-java-8.html
+https://stackoverflow.com/questions/41482574/lambda-special-void-compatibility-rule-statement-expression
+refer spring actions section 3.5.4. Using local variables along with below link
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures

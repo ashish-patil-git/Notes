@@ -1,0 +1,45 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
+
+public class Main
+{
+	public static void main(String[] args) {
+		System.out.println("Program to print duplicate character in string");
+		System.out.println("Input String:");
+		Scanner s = new Scanner(System.in);
+		String inputString = s.nextLine();
+		
+		if (!isValid(inputString)) {
+		    System.out.println("Input String is not valid");
+		} else {
+		 	char[]	charArray = inputString.toLowerCase().toCharArray();
+		 	Map<Character, Integer> characterCount = new HashMap<>();
+		 	for (char character : charArray) {
+		 	    if (characterCount.containsKey(character)) {
+		 	        characterCount.put(character, characterCount.get(character) + 1);
+		 	    } else {
+		 	        characterCount.put(character, 1);
+		 	    }
+		 	}
+		 	
+		 	for (Character key : characterCount.keySet()) {
+		 	    if (characterCount.get(key) > 1) {
+		 	        System.out.println("This character is duplicate: " + key);
+		 	    } 
+		 	}
+		}
+	}
+	
+	private static boolean isValid(String inputString) {
+	    return !(inputString == null || inputString.isEmpty());
+	}
+	
+}
